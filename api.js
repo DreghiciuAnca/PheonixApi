@@ -6,7 +6,7 @@ const app = express();
 const port = 8080;
 app.get('/', (req, res) => res.json(healthcheck));
 app.listen(port, () => console.log(`notes-app listening on port ${port}!`));
-const connection= new Sequalize('pheonix', 'root', '', {
+const connection= new Sequalize('pheonix', 'root', 'Dreghiciuanca1', {
     host: '127.0.0.1',
     port: '3306',
     dialect: 'mysql'
